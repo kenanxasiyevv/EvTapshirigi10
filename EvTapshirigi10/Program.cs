@@ -4,24 +4,27 @@
     {
         static void Main(string[] args)
         {
-
-            Console.Write("Massivin uzunlugunu daxil edin: ");
+          Console.Write("Massivin uzunlugunu daxil edin: ");
             int n = int.Parse(Console.ReadLine());
             int[] arr = new int[n];
             int min = arr[0];
 
-            for (int i = 1; i < arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 Console.Write($"arr[{i}]= ");
                 arr[i] = int.Parse(Console.ReadLine());
 
             }
-             foreach (var item in arr)
+
+            for (int i = 1; i < arr.Length; i++)
             {
-               if (item < min)
-                    min = item;
+                if (arr[i] < arr[min])
+                    min = i;
+
             }
-            Console.WriteLine(min);
+          Console.WriteLine(min);
+            
+         
         }
     }
 }
