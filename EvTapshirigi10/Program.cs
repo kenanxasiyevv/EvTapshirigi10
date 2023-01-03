@@ -16,10 +16,10 @@
                 arr[i] = int.Parse(Console.ReadLine());
 
             }
-            for (int i = 1; i < arr.Length; i++)
+             foreach (var item in arr)
             {
-                if (arr[i] < min)
-                    min = i;
+               if (item < min)
+                    min = item;
             }
             Console.WriteLine(min);
         }
