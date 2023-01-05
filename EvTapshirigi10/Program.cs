@@ -16,9 +16,9 @@
 
             }
 
-           for (int i = arr.Length - 1; i > 0; i--)
+              for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i] < arr[min])
+                if (arr[i] <= arr[min])
                     min = i;
 
             }
