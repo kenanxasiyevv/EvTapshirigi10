@@ -3,7 +3,8 @@
     internal class Program
     {
         static void Main(string[] args)
-        { 
+        {   //Axirinci minimal elementi tapmaq
+            
           Console.Write("Massivin uzunlugunu daxil edin: ");
             int n = int.Parse(Console.ReadLine());
             int[] arr = new int[n];
@@ -15,14 +16,14 @@
                 arr[i] = int.Parse(Console.ReadLine());
 
             }
-
+            
               for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i] <= arr[min])
                     min = i;
 
             }
-          Console.WriteLine(min);
+              Console.WriteLine(min);
             
          
         }
